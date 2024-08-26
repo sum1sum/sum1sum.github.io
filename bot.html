@@ -14,7 +14,6 @@
             background-color: #1b2b3a;
             color: #ece8e1;
         }
-
         .scrollspy-example-2 {
             max-height: 600px;
             overflow-y: auto;
@@ -42,7 +41,17 @@
             line-height: 2;
             border-radius: 0;
         }
-
+        .nav-link.active {
+          background-color: red !important;
+          color: #ece8e1 !important; 
+        }
+        .nav-link:hover {
+          color: red; 
+        }
+        .nav-link:focus {
+          color: #ece8e1; 
+        }
+        
         p {
             line-height: 2;
             text-align: justify;
@@ -59,8 +68,8 @@
         }
 
         .accordion-button {
-            background-color: #1b2b3a;
-            color: #ece8e1;
+            background-color: #ece8e1;
+            color: #1b2b3a;
             font-size: 24px;
         }
 
@@ -90,25 +99,15 @@
             border-radius: 0;
             margin-bottom: 15px;
         }
-        .nav-link.active {
-          background-color: red !important;
-          color: #ece8e1 !important; 
-        }
-        .nav-link:hover {
-          color: red; 
-        }
-        .nav-link:focus {
-          color: #ece8e1; 
-        }
     </style>
 </head>
 
 <body>
     <div class="d-flex align-items-center justify-content-center">
-        <div class="col-lg-10 container-fluid mt-5 border d-flex align-items-center justify-content-center">
+        <div class="col-lg-10 container-fluid border mt-5 d-flex align-items-center justify-content-center">
             <div class="row">
-                <div class="row">
-                    <div class="col-4 mt-4 border-end">
+                <div class="row mb-3">
+                    <div class="col-4 mt-4 border-bottom">
                         <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
                             <nav class="nav nav-pills flex-column">
                                 <a class="nav-link" href="#item-1">Genesis Of Radiants</a>
@@ -130,7 +129,7 @@
                         </nav>
                     </div>
 
-                    <div class="col-8 mt-4">
+                    <div class="col-8 mt-4 border-bottom">
                         <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                             class="scrollspy-example-2" tabindex="0">
                             <div id="item-1">
@@ -231,7 +230,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                     <div class="accordion accordion-flush mt-3" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -407,7 +405,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                          <!-- Card 9 -->
                                          <div class="col-lg-3 col-md-4">
                                             <div class="card" style="width: 100%;">
